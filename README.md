@@ -54,5 +54,7 @@ try (BookWorker worker = bookDef.openBook(OUTPUT_FILE_PATH)) {
 ```
 try (BookWorker worker = bookDef.openBook(TEMPLATE_FILE_PATH, OUTPUT_FILE_PATH)) {
     worker.write(data);
+} catch (IOException e) {
+    // ...
 }
 ```
